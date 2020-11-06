@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
 @Entity
-public class Conta {
+public class Conta  extends BaseResponse{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,22 +29,4 @@ public class Conta {
 		Hash = hash;
 	}
 
-	public String getNome() {
-		return Nome;
-	}
-
-	public void setNome(String nome) {
-		Nome = nome;
-	}
-
-	public String getCpf() {
-		return Cpf;
-	}
-
-	public void setCpf(String cpf) {
-		Cpf = cpf;
-	}
-
-	private String Nome;
-	private String Cpf;
 }

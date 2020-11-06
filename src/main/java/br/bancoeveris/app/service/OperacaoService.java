@@ -1,9 +1,13 @@
 package br.bancoeveris.app.service;
 
 import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
 import br.bancoeveris.app.model.Operacao;
 import br.bancoeveris.app.repository.OperacaoRepository;
 
+@Service
 public class OperacaoService {
 
 	final OperacaoRepository _repository;
@@ -18,10 +22,5 @@ public class OperacaoService {
 		_repository.save(operacao);
 	}
 
-	// Obter Somente Um
-	public Optional<Operacao> listar(Long id) {
-		return _repository.findById(id);
-
-	}
 
 }
