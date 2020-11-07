@@ -9,9 +9,9 @@ import javax.persistence.ManyToOne;
 public class Operacao  extends BaseResponse{
 	
 	@Id
-	private Long Id;
-	private String Tipo;
-	private double Valor;
+	private Long id;
+	private String tipo;
+	private double valor;
 	
 	
 	@ManyToOne
@@ -23,27 +23,27 @@ public class Operacao  extends BaseResponse{
     private Conta ContaD;
 
 	public Long getId() {
-		return Id;
+		return id;
 	}
 
 	public void setId(Long id) {
-		Id = id;
+		this.id = id;
 	}
 
 	public String getTipo() {
-		return Tipo;
+		return tipo;
 	}
 
 	public void setTipo(String tipo) {
-		Tipo = tipo;
+		this.tipo = tipo;
 	}
 
 	public double getValor() {
-		return Valor;
+		return valor;
 	}
 
 	public void setValor(double valor) {
-		Valor = valor;
+		this.valor = valor;
 	}
 
 	public Conta getContaO() {
@@ -61,5 +61,6 @@ public class Operacao  extends BaseResponse{
 	public void setContaD(Conta contaD) {
 		ContaD = contaD;
 	}
+
 	
 }

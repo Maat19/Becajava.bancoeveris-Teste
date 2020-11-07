@@ -4,6 +4,7 @@ public class ContaSpec {
 
 	private String Hash;
 	
+	
 
 	public String getHash() {
 		return Hash;
@@ -12,6 +13,6 @@ public class ContaSpec {
 	public void setHash(String hash) {
 		Hash = hash;
 	}
-	
+
 	
 }

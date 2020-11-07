@@ -1,5 +1,6 @@
 package br.bancoeveris.app.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
@@ -10,23 +11,30 @@ public class Conta  extends BaseResponse{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long Id;
-	private String Hash;
-
+	private Long id;
+	@Column(unique = true)
+	private String hash;
+	private double saldo = 1000;
 	public Long getId() {
-		return Id;
+		return id;
 	}
-
 	public void setId(Long id) {
-		Id = id;
+		this.id = id;
 	}
-
 	public String getHash() {
-		return Hash;
+		return hash;
 	}
-
 	public void setHash(String hash) {
-		Hash = hash;
+		this.hash = hash;
 	}
+	public double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	
+	
 
 }

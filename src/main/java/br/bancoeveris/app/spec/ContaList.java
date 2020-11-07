@@ -6,6 +6,8 @@ import br.bancoeveris.app.model.BaseResponse;
 import br.bancoeveris.app.model.Conta;
 
 public class ContaList extends BaseResponse{
+
+	
 	
 	private List<Conta> Contas;
 
@@ -13,7 +15,7 @@ public class ContaList extends BaseResponse{
 		return Contas;
 	}
 
-	public void setContas(List<Conta> contas) {
+	public void setClientes(List<Conta> contas) {
 		Contas = contas;
 	}
 }

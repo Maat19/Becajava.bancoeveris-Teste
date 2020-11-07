@@ -4,10 +4,10 @@ import br.bancoeveris.app.model.BaseResponse;
 
 public class BaseController {
 
-public BaseResponse error = new BaseResponse();
+public BaseResponse errorbase = new BaseResponse();
 	
 	public BaseController() {
-		error.StatusCode = 500;
-		error.Message = "Ocorreu um erro inesperado.Contate o administrador";
+		errorbase.StatusCode = 500;
+		errorbase.Message = "Ocorreu um erro inesperado.Contate o administrador";
 	}
 }
